@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">    
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="full-screen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>用户中心</title>
+	    <link rel="stylesheet" href="../pack/css/mian.css" />
+	    <script type="text/javascript" src="../pack/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js" ></script>
+	</head>
+	<body>
+		<div class="user-tab">
+			<img class="user-img" src="../pack/img/head.jpg"/>
+			<p class="user-p">我是陈小可</p>
+		</div>
+		<div class="user-box">
+			<ul class="user-list">		
+				<li class="user-cell-1">	
+		            <div class="user-cell-primary">
+		                <p>个人资料</p>
+		            </div>
+		            <div class="user-cell-fn"></div>
+		        </li>
+		         <div class="user-line show1" style="display: none;">
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">姓名</p></div>
+		        		<div class="user-com">陈小可</div>
+		        	</a>
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">年龄</p></div>
+		        		<div class="user-com">22</div>
+		        	</a>
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">性别</p></div>
+		        		<div class="user-com">男</div>
+		        	</a>
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">联系方式</p></div>
+		        		<div class="user-com">15288888888</div>
+		        	</a>
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">邮箱</p></div>
+		        		<div class="user-com">15288888888@163.com</div>
+		        	</a>
+		        </div>
+		        <li class="user-cell-2">		           
+		            <div class="user-cell-primary">
+		                <p>我的好友</p>
+		            </div>
+		            <div class="user-cell-ft"></div>
+		        </li>
+		        <div class="user-line show2" style="display: none;">
+		        	<a class="user-am user-boa" href="series_friends.html">
+		        		<div class="user-poc"><p class="user-poc-p">一级好友</p></div>
+		        		<div class="user-com">0.00 (0)</div>
+		        	</a>
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">二级好友</p></div>
+		        		<div class="user-com">0.00 (0)</div>
+		        	</a>
+		        	<a class="user-am user-boa">
+		        		<div class="user-poc"><p class="user-poc-p">三级好友</p></div>
+		        		<div class="user-com">0.00 (0)</div>
+		        	</a>
+		        </div>
+		        <li>		            
+		            <div class="user-cell-primary">
+		                <p>我的积分</p>
+		            </div>
+		            <div class="user-cell-fc">50</div>
+		        </li>
+		        <li>	
+		        	<a href="inte_mall.html">
+			            <div class="ser-pm">
+			                <p>积分商城</p>
+			            </div>				           
+		        	</a>	            
+		        </li>
+		        <li>		            
+		            <div class="user-cell-primary">
+		                <p>关于我们</p>
+		            </div>
+		            <div class="user-cell-fc">400-004-1888</div>
+		        </li>
+		        <li>		            
+		        	<a>
+			            <div class="ser-pm">
+			                <p>模式讲解</p>
+			            </div>	
+		        	</a>	            
+		        </li>		      
+		    </ul>
+		</div>
+		<script type="text/javascript">
+		 $().ready(function (){
+		    $ (".user-cell-2").click (function (){
+			    $(".user-cell-ft").toggleClass ("user-cell-fm");
+			    $(".show2").slideToggle(300);
+		    });
+		    $ (".user-cell-1").click (function (){
+			    $(".user-cell-fn").toggleClass ("user-cell-fm");
+			    $(".show1").slideToggle(300);
+		    });
+	    });
+	</script>
+	</body>
+</html>

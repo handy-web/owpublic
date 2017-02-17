@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" id="favicon" href="http://oflpt1i9i.bkt.clouddn.com/logo.png" type="image/x-icon">
+		<title>日期选择控件-pc端</title>
+		<link rel="stylesheet" href="css/datePicker.css" />
+		<script type="text/javascript" src="../JB/pack/js/jquery-1.9.0.min.js"></script>		
+	</head>
+	<body>
+		<center style="margin-top:100px;">
+			<h3 style="margin:30px;font-family: 'microsoft yahei';">点击下面的输入框，会弹出日期选择控件！</h3>
+			<input type="text" id="datePicker" class="date_picker" readonly placeholder="点击选择日期" />
+			<input type="text" id="datePicker2" class="date_picker" readonly placeholder="点击选择日期" />
+			<input type="text" id="datePicker3" class="date_picker" readonly placeholder="点击选择日期" />
+		</center>
+		<script type="text/javascript" src="js/datePicker.js"></script> 
+		<script type="text/javascript">
+			$(function() {
+				$('#datePicker').date_input();
+				$('#datePicker2').date_input();
+				$('#datePicker3').date_input();
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>钱包注册</title>
+	    <script src="wap/js/mui.js"></script>
+	    <link href="wap/css/mui.css" rel="stylesheet"/>
+	    <link href="wap/css/style.css" rel="stylesheet"/>
+	    <script type="text/javascript" src="wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js" ></script>
+	</head>
+	<body style="background-color: #fff;">
+		<h4 class="reg-h4">张江微电子港7号楼支付钱包注册</h4>
+		<ul class="reg-list">
+			<li>
+				<div class="reg-tab reg-bg">
+					<span class="reg-le1"></span> 
+					<span class="reg-in reg-wt">
+						<input type="tel" name="" maxlength="11" placeholder="请输入手机号码" />
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="reg-tab reg-bg">
+					<span class="reg-le2"></span>
+					<span class="reg-in reg-wts">
+						<input type="tel" name="" maxlength="" placeholder="请输入验证码" />
+					</span>
+					<span class="reg-rt">
+						<input type="button" value="获取验证码" />
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="reg-tab reg-bg">
+					<span class="reg-le3"></span>
+					<span class="reg-in reg-wt">
+						<input type="password" name="" maxlength="" placeholder="请输入登录密码" />
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="reg-tab reg-bg">
+					<span class="reg-le4"></span>
+					<span class="reg-in reg-wt">
+						<input type="text" name="" maxlength="" placeholder="请输入真实名字" />
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="reg-tab reg-bg">
+					<span class="reg-le5"></span>
+					<span class="reg-in reg-wt">
+						<input type="tel" name="" maxlength="" placeholder="请输入身份证号" />
+					</span>
+					<span class="reg-ft"></span>
+				</div>
+			</li>
+			<li>
+				<div class="reg-tab reg-bg">
+					<span class="reg-le6"></span>
+					<span class="reg-in reg-wt">
+						<input type="password" name="" maxlength="" placeholder="设置支付密码" />
+					</span>
+				</div>
+			</li>
+			<li>
+				<div class="reg-tab reg-bg" id="login_del">
+					<span class="reg-le5"></span>
+					<span class="reg-in reg-wt">
+						<input id="login_rex" type="tel" name=""  value="请选择登录类型" readonly />
+					</span>
+					<span class="reg-row"></span>
+				</div>
+			</li>
+		</ul>		
+		
+		<div class="ord-im" style="display: none;"></div>
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">请选择登录类型</div>
+				<ul class="reg-item">
+					<li>学生</li>
+					<li>老师</li>
+					<li>教授</li>
+				</ul>
+			</div>
+		</div>
+	
+		<div class="reg-box"> 
+			<a class="but">立即注册</a>
+		</div>
+		
+		<div class="reg-way">
+			<input type="checkbox" name="reg" id="reg-01" value="" checked />
+			<label for="reg-01">我已经阅读并同意<a href="">《用户服务条款》</a></label>		 	
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				$('#login_del').click(function(){
+					$('.fast-tg').css("top","29.5%").animate({"top":"30%"},100).show();
+					$('.ord-im').show();
+				});				
+				$('.reg-item li').click(function(){
+					var row = $(this).text();
+					//alert(row);
+					$('#login_rex').val(row);
+					$('.fast-tg,.ord-im').hide();
+				});
+			})
+		</script>
+	</body>
+</html>

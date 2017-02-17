@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">    
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="full-screen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>工作法</title>
+	    <link rel="stylesheet" href="pack/css/work.css" />	
+		<script type="text/javascript" src="pack/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js"></script>
+		<script src="pack/js/common.js"></script>
+		<script type="text/javascript" src="pack/js/touchwipe.js"></script>
+		<script type="text/javascript" src="pack/js/jquery.jscroll.min.js"></script>
+		<script type="text/javascript" src="pack/js/TweenMax.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() { 
+			//$('.jscroll').jscroll({
+				//loadingHtml: '<span>巨邦君正在全力刷新</span>',
+				//autoTrigger: true,
+				//autoTriggerUntil: 2,
+				//nextSelector:'a.next:last'
+			//});
+			$(".btn").click(function(){
+				$("#dir").hide();
+				window.location="";
+			});
+		});
+		function showDes(el){
+		    var subcon = $(el).parent().next();
+		    var status = $(el).parent().next().css("display");
+			
+			if ($(document).scrollTop() >= ($(document).height() - $(window).height())) {
+				//alert("最后一个")
+				var subconH = subcon.height();
+				//$(document).scrollTop($(document).height() - $(window).height() + subconH);
+				var st = $(document).scrollTop();
+				//alert(st);
+				$('html, body').animate({
+				  scrollTop: st + subconH+30
+				}, 500);
+			}
+			
+		    if (status == "block") {
+		      subcon.fadeOut();
+		    } else {
+		      subcon.fadeIn();
+		    }
+		}
+		</script>
+	</head>
+	<body>
+		<!--巨邦文化-->
+		<div id="index" class="wh" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00066, 0, 0, 0, 1);">
+			<h2 class="tit"><img src="pack/img/app-w01.png"></h2>
+			<div class="book"><img src="pack/img/app-wk02.gif"></div>
+			<div class="bot tc">
+				<a href="" class="btn"><img src="pack/img/app-wk03.png"></a>	
+				<p>开创新型企业管理模式&nbsp;&nbsp;建立公正爱心发展平台</p>
+				<p class="tex-p">巨邦国际控股有限公司 出品</p>
+			</div>
+			<div class="next"><img src="pack/img/app-wr.png"></div>
+		</div> 
+		
+		<div id="qianyan" class="wh" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00066, 0, 0, 0, 1);background: #fff;">
+			<h2 class="tit">
+				<a href=""><img src="pack/img/app-w01.png" alt=""></a>		
+			</h2>
+			<h2 class="tit2">巨邦文化</h2> 
+			<p><img src="http://oflpt1i9i.bkt.clouddn.com/app-w04.jpg" alt=""></p> 
+			<div class="next"><img src="pack/img/app-wr.png"></div>
+		</div>
+		<!--目录-->
+		<div id="dir">	
+			<h2 class="tit2">目 录</h2> 
+			<div class="jscroll"> 
+				<div class="jscroll-inner">
+					<ul class="dir"> 
+						<li class="cf">
+							<a class="dir-cell">
+								<div class="dir-im"><img src="http://oflpt1i9i.bkt.clouddn.com/app-001.png"/></div>
+								<div class="dir-ftm">
+									<div class="dir-title">寒暑假时间就是就是</div>
+									<div class="dir-ft"><i></i></div>
+									<div class="dir-bo"><span>公司工作法：文化</span><span class="frt">浏览量：564122次</span></div>
+								</div>
+							</a>
+						</li>
+						<li class="cf">
+							<a class="dir-cell">
+								<div class="dir-im"><img src="http://oflpt1i9i.bkt.clouddn.com/app-001.png"/></div>
+								<div class="dir-ftm">
+									<div class="dir-title">寒暑假时间就是就是</div>
+									<div class="dir-ft"><i></i></div>
+									<div class="dir-bo"><span>公司工作法：文化</span><span class="frt">浏览量：564122次</span></div>
+								</div>
+							</a>
+						</li>		
+						<li class="cf">
+							<a class="dir-cell">
+								<div class="dir-im"><img src="http://oflpt1i9i.bkt.clouddn.com/app-001.png"/></div>
+								<div class="dir-ftm">
+									<div class="dir-title">寒暑假时间就是就是</div>
+									<div class="dir-ft"><i></i></div>
+									<div class="dir-bo"><span>公司工作法：文化</span><span class="frt">浏览量：564122次</span></div>
+								</div>
+							</a>
+						</li>		
+						<li class="cf">
+							<a class="dir-cell">
+								<div class="dir-im"><img src="http://oflpt1i9i.bkt.clouddn.com/app-001.png"/></div>
+								<div class="dir-ftm">
+									<div class="dir-title">寒暑假时间就是就是</div>
+									<div class="dir-ft"><i></i></div>
+									<div class="dir-bo"><span>公司工作法：文化</span><span class="frt">浏览量：564122次</span></div>
+								</div>
+							</a>
+						</li>	
+						<li class="cf">
+							<a class="dir-cell">
+								<div class="dir-im"><img src="http://oflpt1i9i.bkt.clouddn.com/app-001.png"/></div>
+								<div class="dir-ftm">
+									<div class="dir-title">寒暑假时间就是就是</div>
+									<div class="dir-ft"><i></i></div>
+									<div class="dir-bo"><span>公司工作法：文化</span><span class="frt">浏览量：564122次</span></div>
+								</div>
+							</a>
+						</li>		
+						<li class="cf">
+							<a class="dir-cell">
+								<div class="dir-im"><img src="http://oflpt1i9i.bkt.clouddn.com/app-001.png"/></div>
+								<div class="dir-ftm">
+									<div class="dir-title">寒暑假时间就是就是</div>
+									<div class="dir-ft"><i></i></div>
+									<div class="dir-bo"><span>公司工作法：文化</span><span class="frt">浏览量：564122次</span></div>
+								</div>
+							</a>
+						</li>		
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="pack/js/common_home.js"></script>
+		<script type="text/javascript">
+					$(function() {
+						//导航菜单 滚动显示/隐藏效果
+						var disScroll;
+						var lastScrollTop = 0;
+						var delat = 5;
+						var navHight = $('.header').outerHeight();
+						$(window).scroll(function(event) {
+							disScroll = true;
+						});
+						setInterval(function() {
+							if (disScroll) {
+								hasScrolled();
+								disScroll = false;
+							}
+						}, 250);
+		
+					function hasScrolled() {
+						var st = $(this).scrollTop();
+						if (Math.abs(st - lastScrollTop) <= delat) {
+							return;
+						};
+						// st滚动距离大于导航高度并且大于上次高度
+						if (st > navHight + 40 && st > lastScrollTop) {
+							$('.js-tit').removeClass('header-show').addClass('header-hide');
+						} else {
+							if (st + $(window).height() < $(document).height()) {
+							$('.js-tit').removeClass('header-hide').addClass('header-show');
+						}
+					}
+				lastScrollTop = st;
+				};
+			})
+		</script>
+	</body>
+</html>

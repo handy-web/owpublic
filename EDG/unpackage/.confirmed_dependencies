@@ -1,0 +1,116 @@
+{
+	"index.html": {
+		"resources": [
+			"wap/img/s03.png",
+			"wap/css/style.css",
+			"wap/img/a01.png",
+			"wap/img/body.jpg",
+			"wap/js/main.js",
+			"wap/img/but01.png",
+			"wap/img/k07.png",
+			"wap/img/but02.png",
+			"wap/js/jquery.mobile.custom.min.js",
+			"wap/img/s04.png",
+			"wap/img/bottom.png",
+			"RNG/skt/img/s01.png",
+			"wap/js/jquery-2.1.1.js",
+			"wap/js/modernizr.js",
+			"wap/css/reset.css",
+			"wap/img/a02.png",
+			"wap/img/s02.png",
+			"RNG/skt/code.html",
+			"RNG/payt/index.html"
+		],
+		"refer": [
+			"RNG/skt/code.html",
+			"RNG/payt/index.html"
+		]
+	},
+	"RNG/skt/code.html": {
+		"resources": [
+			"RNG/skt/img/b2.jpg",
+			"RNG/skt/img/b1.jpg",
+			"RNG/skt/js/zepto.js",
+			"RNG/skt/img/a5.jpg",
+			"RNG/skt/js/head.js",
+			"RNG/skt/img/a4.jpg"
+		]
+	},
+	"RNG/payt/modity/order.html": {
+		"resources": [
+			"RNG/payt/wap/img/app-bgwc.png",
+			"RNG/payt/wap/img/app-del.png",
+			"RNG/payt/wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"RNG/payt/modity/orderlist.html",
+			"RNG/payt/index.html"
+		],
+		"refer": [
+			"RNG/payt/modity/orderlist.html",
+			"RNG/payt/index.html"
+		]
+	},
+	"RNG/payt/index.html": {
+		"resources": [
+			"RNG/payt/wap/img/app-izz.png",
+			"RNG/payt/wap/img/app-ba02.jpg",
+			"RNG/payt/wap/img/app-itx.png",
+			"RNG/payt/wap/img/app-icz.png",
+			"RNG/payt/wap/img/app-ba01.jpg",
+			"RNG/payt/wap/css/style.css",
+			"RNG/payt/wap/img/app-icm.png",
+			"RNG/payt/wap/img/app-ba03.jpg",
+			"RNG/payt/wap/img/app-iyhk.png",
+			"RNG/payt/wap/img/app-gwc.png",
+			"RNG/payt/modity/order.html",
+			"RNG/payt/wap/fonts/iconfont.woff",
+			"RNG/payt/wap/css/mui.css",
+			"RNG/payt/wap/img/app-iye.png",
+			"RNG/payt/wap/js/mui.js",
+			"RNG/payt/wap/img/app-tub.png",
+			"RNG/payt/modity/orderlist.html"
+		],
+		"refer": [
+			"RNG/payt/modity/order.html",
+			"RNG/payt/modity/orderlist.html"
+		]
+	},
+	"RNG/payt/modity/orderlist.html": {
+		"resources": [
+			"RNG/payt/wap/js/demo.js",
+			"RNG/payt/person/center.html",
+			"RNG/payt/wap/img/app-top.png",
+			"RNG/payt/wap/img/app-dow.png",
+			"RNG/payt/index.html"
+		],
+		"refer": [
+			"RNG/payt/person/center.html",
+			"RNG/payt/index.html"
+		]
+	},
+	"RNG/payt/person/center.html": {
+		"resources": [
+			"RNG/payt/modity/order.html",
+			"RNG/payt/wap/img/app-ha.jpg",
+			"RNG/payt/wap/img/app-caq.png",
+			"RNG/payt/wap/img/app-czl.png",
+			"RNG/payt/wap/img/app-cdd.png",
+			"RNG/payt/wap/img/app-cqb.png",
+			"RNG/payt/wap/img/app-cdz.png",
+			"RNG/payt/person/center_gement.html",
+			"RNG/payt/modity/orderlist.html"
+		],
+		"refer": [
+			"RNG/payt/modity/order.html",
+			"RNG/payt/person/center_gement.html",
+			"RNG/payt/modity/orderlist.html"
+		]
+	},
+	"RNG/payt/person/center_gement.html": {
+		"resources": [
+			"RNG/payt/person/center.html"
+		],
+		"refer": [
+			"RNG/payt/person/center.html"
+		]
+	}
+}

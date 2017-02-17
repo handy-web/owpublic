@@ -1,0 +1,155 @@
+/* 
+ * Boxer v3.0.3 - 2014-01-12 
+ * A jQuery plugin for displaying images, videos or content in a modal overlay. Part of the Formstone Library. 
+ * http://formstone.it/boxer/ 
+ * 
+ * Copyright 2014 Ben Plum; MIT Licensed 
+ */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+img{width: 100%;border: 0;}
+body {
+  font-size: 100%;
+  font-family: "Open Sans", "microsoft yahei", sans-serif;;
+
+}
+ 	.boxer-open { overflow: hidden !important; }
+ 	
+ 	#boxer, #boxer .boxer-container, #boxer .boxer-content, #boxer-overlay {
+		-webkit-transition: none;
+		   -moz-transition: none;
+		   	-ms-transition: none;
+		   	 -o-transition: none;
+		   	 	transition: none;
+	}
+ 	
+	#boxer-overlay { background: #000; height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 105; }
+	#boxer { background: #fff; border-radius: 3px; box-shadow: 0 0 25px #000; padding: 10px; position: absolute; z-index: 105; }
+	#boxer.inline { padding: 30px; }
+	
+	#boxer .boxer-close { background:url(http://oflpt1i9i.bkt.clouddn.com/tit.png) no-repeat center;cursor: pointer; display: block; height: 30px;width: 30px; position: absolute; padding: 0; left: 15px; top: 20px; text-indent: -99999px; z-index: 106;background-size: 100% auto;}
+	
+	#boxer .boxer-container { background: #fff; height: 100%; overflow: hidden; position: relative; width: 100%; z-index: 105; zoom: 1; }
+	#boxer .boxer-content { background: #fff; overflow: hidden; padding: 0; width: 10000px; }
+	#boxer .boxer-image { float: left; }
+	#boxer .boxer-video { height: 100%; width: 100%; }
+	#boxer .boxer-iframe { float: left; height: 100%; overflow: auto; width: 100%; }
+	#boxer .boxer-meta { clear: both; }
+	
+	#boxer .boxer-arrow { background: #fff url(jquery.fs.boxer-icons.png) no-repeat 0 0; border-radius: 100%;  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); cursor: pointer; display: block; height: 40px; margin-right: auto; margin-left: auto; position: absolute; text-indent: -99999px; top: 0; width: 40px; 
+		-webkit-transition: opacity 0.1s linear;
+		   -moz-transition: opacity 0.1s linear;
+		   	-ms-transition: opacity 0.1s linear;
+		   	 -o-transition: opacity 0.1s linear;
+		   	 	transition: opacity 0.1s linear;
+	}
+	#boxer .boxer-arrow.previous { left: 20px; }
+	#boxer .boxer-arrow.next { background-position: -40px 0; right: 20px; }
+	
+	#boxer .boxer-position {color: #999;margin: 0; padding: 15px 10px 5px;font-size: 18px;font-family: "microsoft yahei"}
+	#boxer .boxer-caption p { margin: 0; padding: 15px 10px 10px 10px;}
+	#boxer .boxer-caption.gallery p { padding-top: 0; }
+	
+	#boxer.loading .boxer-container { background: #fff url(http://oflpt1i9i.bkt.clouddn.com/boxer-loading.gif) no-repeat center; }
+	
+	/* Mobile */
+	#boxer.mobile { background-color: #000; border-radius: 0; height: 100%; left: 0; padding: 30px 0 0; position: fixed; top: 0; width: 100%; }
+	#boxer.mobile .boxer-close {}
+	#boxer.mobile .boxer-container { background: #000; position: relative; }
+	#boxer.mobile .boxer-content { background-color: #000; }
+	#boxer.mobile .boxer-arrow { background-color: transparent; border-radius: 0; margin: -20px 0 0; top: 50%; display: none;}
+	#boxer.mobile .boxer-arrow.previous { background-position: 0 -40px; float: left; left: 0; }
+	#boxer.mobile .boxer-arrow.next { background-position: -40px -40px; float: right; right: 0;display: none;}
+	#boxer.mobile .boxer-arrow.disabled { opacity: 0.5; }
+	
+	#boxer.mobile .boxer-meta { bottom: 0; background-color: rgba(0, 0, 0, 0.75); left: 0; padding: 15px 20px 15px; position: absolute; width: 100%; }
+	#boxer.mobile .boxer-position { padding: 0; }
+	#boxer.mobile .boxer-caption p { color: #eee; padding: 10px 0 0; }
+	
+	#boxer.mobile .boxer-image {
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		     -o-transition: none !important;
+		        transition: none !important;
+		-webkit-transform: translate(0px, 0px);
+		   -moz-transform: translate(0px, 0px);
+		    -ms-transform: translate(0px, 0px);
+		     -o-transform: translate(0px, 0px);
+		        transform: translate(0px, 0px);
+	}
+	#boxer.mobile.animated .boxer-image {
+		-webkit-transition: -webkit-transform 0.25s ease-out !important;
+		   -moz-transition:    -moz-transform 0.25s ease-out !important;
+		    -ms-transition:     -ms-transform 0.25s ease-out !important;
+		     -o-transition:      -o-transform 0.25s ease-out !important;
+		        transition: 		transform 0.25s ease-out !important;
+	}
+	
+	#boxer.mobile.loading .boxer-container { background: #000 url(jquery.fs.boxer-loading-dark.gif) no-repeat center; }
+	
+	@media screen and (min-width: 980px) { 
+		#boxer .boxer-close:hover { background-position: -70px -20px; }
+		
+		#boxer .boxer-arrow { opacity: 0; }
+		#boxer .boxer-content:hover .boxer-arrow { opacity: 0.75; }
+		#boxer .boxer-content .boxer-arrow:hover { opacity: 1; }
+		#boxer .boxer-content:hover .boxer-arrow.disabled { opacity: 0.3; cursor: default !important; }
+		
+		#boxer.mobile .boxer-arrow { opacity: 1; }
+		#boxer.mobile .boxer-arrow.disabled { opacity: 0.5; }
+	}
+	
+	@media screen and (max-width: 980px) { 
+		#boxer.mobile { position: fixed; }
+    }

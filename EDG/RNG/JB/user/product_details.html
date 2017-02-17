@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">    
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-touch-fullscreen" content="yes">
+	    <meta name="full-screen" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="format-detection" content="address=no">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>商品详情</title>
+	    <link rel="stylesheet" href="../pack/css/mian.css" />
+	    <link rel="stylesheet" href="../pack/css/sm.css" />
+	    <script type="text/javascript" src="../pack/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js" ></script>
+	    <script>jQuery.noConflict()</script> 
+	    <script type="text/javascript" src="../pack/js/zepto.js" ></script>
+	</head>
+	<body>
+		
+		<div class="prod-header" style="display: block;">
+			<div class="inte-img inte-boms">
+				<img src="http://oflpt1i9i.bkt.clouddn.com/app-inte-azy.png"/>		
+			</div>
+			<div class="prod-box prod-cin">
+				<h3 class="prod-h3">欧洲游</h3>
+				<p class="prod-p">积分<span>2000</span></p>
+			</div>
+			<div class="prod-cin prod-title prod-t">
+				<span class="prod-pl">送至</span><div class="page prod-le" id="page-city-picker"><input type="text" name="" id="city-picker" readonly value="请选择" /></div>			
+			</div> 
+			 
+			<div class="prod-list prod-cin">
+				<p class="prod-pm">巨邦国际控股有限公司</p>
+				<p class="prod-pm">总部：深圳市罗湖区人民南路深圳发展中心大厦38层</p>
+				<p class="prod-pl">咨询电话：<span class="sp">400-004-1888</span></p>
+			</div>
+			<div class="prod-but prod-con">
+				<a class="but">兑现商品</a>
+			</div>
+			<div class="prod-clle">
+				<h3 class="h3">商品详情</h3>				
+				<img class="img" src="http://oflpt1i9i.bkt.clouddn.com/app-prod-2.png"/>
+				<img class="img" src="http://oflpt1i9i.bkt.clouddn.com/app-prod-1.png"/>
+			</div>
+		</div>
+		
+		<!--遮罩-->
+		<div class="prod-bg" style="display: none;"></div> 
+		<!--确认积分兑现弹框-->
+		<div class="prod-cm prod-top1" style="display: none;"> 
+			<div class="prod-m">
+				<div class="prod-mcv prod-hes">
+					<p class="pl prod-oc">当前兑现需要消耗2000</p>
+					<p class="pl">积分您确认兑现？</p>
+					<div class="prod-cn">
+						<a class="but-m flt but-co1">否</a>
+						<a class="but-m frt but-co2">是</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--兑现成功弹框-->
+		<div class="prod-cm prod-top2" style="display: none;">
+			<div class="prod-m">
+				<div class="prod-mcv prod-hes">
+					<p class="pl prod-oc1">兑现成功</p>
+					<p class="pl">请耐心等待礼物</p>					
+				</div>
+			</div>
+		</div>
+		
+		<!--兑现失败弹框-->
+		<div class="prod-cm prod-top3" style="display: none;">
+			<div class="prod-m">
+				<div class="prod-mcv prod-hes">
+					<p class="pl prod-oc1">兑现失败</p>
+					<p class="pl">您的积分不足</p>					
+				</div>
+			</div>
+		</div>
+		
+		<!--商品下架-->
+		<div class="prod-moc" style="display: none;">
+			<p class="pl">不好意思该商品已下架</p>
+			<p class="pl">下次记得及时关注我们哦！</p>
+		</div>
+		 
+		<script type="text/javascript" src="../pack/js/demos.js" ></script>
+		<script type="text/javascript" src="../pack/js/sm.js" ></script>
+		<script type="text/javascript" src="../pack/js/sm-city-picker.js" ></script>		
+	</body>
+</html>

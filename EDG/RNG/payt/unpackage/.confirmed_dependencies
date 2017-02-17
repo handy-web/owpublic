@@ -1,0 +1,304 @@
+{
+	"person/center.html": {
+		"resources": [
+			"wap/fonts/iconfont.woff",
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/img/app-er.png",
+			"wap/img/app-ha.jpg",
+			"wap/js/mui.js",
+			"wap/css/mui.css"
+		],
+		"refer": []
+	},
+	"modity/bankcard_success.html": {
+		"resources": [
+			"wap/img/app-cn2.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-zsyh.jpg"
+		],
+		"refer": []
+	},
+	"person/center_security .html": {
+		"resources": [
+			"wap/js/mui.js",
+			"wap/css/mui.css"
+		],
+		"refer": []
+	},
+	"person/center_security.html": {
+		"resources": [
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center_security_log.html"
+		],
+		"refer": [
+			"person/center_security_log.html"
+		]
+	},
+	"person/center_security_log.html": {
+		"resources": [
+			"person/center_security_logx.html",
+			"person/center_security_logw.html",
+			"person/center_security.html"
+		],
+		"refer": [
+			"person/center_security_logx.html",
+			"person/center_security_logw.html",
+			"person/center_security.html"
+		]
+	},
+	"person/center_security_logx.html": {
+		"resources": [
+			"person/center_security_log.html"
+		],
+		"refer": [
+			"person/center_security_log.html"
+		]
+	},
+	"person/center_security_logw.html": {
+		"resources": [
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center_security_log.html"
+		],
+		"refer": [
+			"person/center_security_log.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"wap/fonts/iconfont.woff",
+			"wap/img/app-bananr.png",
+			"wap/img/app-liz.png",
+			"wap/css/style.css",
+			"wap/img/app-er.png",
+			"wap/img/app-tub.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-gwc.png",
+			"wap/img/app-icm.png",
+			"wap/img/app-icz.png",
+			"wap/img/app-ba03.jpg",
+			"wap/img/app-ba02.jpg",
+			"wap/img/app-iyhk.png",
+			"wap/img/app-ba01.jpg",
+			"wap/img/app-izz.png",
+			"wap/img/app-iye.png",
+			"wap/img/app-itx.png",
+			"wallet/payme.html",
+			"wallet/bankcard_inc.html",
+			"modity/order.html",
+			"modity/orderlist.html",
+			"wallet/recharge.html",
+			"wallet/transfer.html",
+			"wallet/withdrawal.html"
+		],
+		"refer": [
+			"wallet/payme.html",
+			"wallet/bankcard_inc.html",
+			"modity/order.html",
+			"modity/orderlist.html",
+			"wallet/recharge.html",
+			"wallet/transfer.html",
+			"wallet/withdrawal.html"
+		]
+	},
+	"modity/order_detail.html": {
+		"resources": [
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/css/style.css",
+			"wap/img/app-liz03.jpg",
+			"wap/img/app-liz04.png",
+			"wap/img/app-liz02.jpg",
+			"wap/img/app-liz05.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/js/doc.js",
+			"modity/order_confirm.html",
+			"modity/order.html"
+		],
+		"refer": [
+			"modity/order_confirm.html",
+			"modity/order.html"
+		]
+	},
+	"modity/order.html": {
+		"resources": [
+			"wap/img/app-del.png",
+			"wap/fonts/iconfont.woff",
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/css/style.css",
+			"wap/img/app-tub.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-gwc.png",
+			"wap/img/app-bgwc.png",
+			"modity/order_detail.html",
+			"modity/orderlist.html"
+		],
+		"refer": [
+			"modity/order_detail.html",
+			"modity/orderlist.html"
+		]
+	},
+	"register.html": {
+		"resources": [
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/css/style.css",
+			"wap/img/app-regist_01.png",
+			"wap/img/app-rdown.png",
+			"wap/img/app-r01.png",
+			"wap/js/mui.js",
+			"wap/img/app-regist_02.png",
+			"wap/img/app-regist_06.png",
+			"wap/img/app-regist_03.png",
+			"wap/css/mui.css",
+			"wap/img/app-wh.png",
+			"wap/img/app-regist_05.png",
+			"wap/img/app-regist_04.png",
+			"wap/img/app-r02.png"
+		]
+	},
+	"wallet/payme.html": {
+		"resources": [
+			"wap/img/app-ewm.png",
+			"wap/img/app-tet.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"wallet/bankcard_inc.html": {
+		"resources": [
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/img/app-add.png",
+			"wap/img/app-er.png",
+			"wap/img/app-cn1.png",
+			"wap/img/app-cn2.png",
+			"wallet/bankcard_fill.html",
+			"index.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html",
+			"index.html"
+		]
+	},
+	"modity/orderlist.html": {
+		"resources": [
+			"wap/js/demo.js",
+			"wap/img/app-dow.png",
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/fonts/iconfont.woff",
+			"wap/css/style.css",
+			"wap/js/mui.js",
+			"wap/css/mui.css"
+		]
+	},
+	"modity/order_confirm.html": {
+		"resources": [
+			"modity/order_detail.html",
+			"wap/img/app-botton.png",
+			"wap/img/app-addr.png",
+			"wap/img/app-sp.jpg"
+		],
+		"refer": [
+			"modity/order_detail.html"
+		]
+	},
+	"wallet/bankcard_fill.html": {
+		"resources": [
+			"wap/js/demos.js",
+			"wap/css/sm.css",
+			"wap/js/sm-city-picker.js",
+			"wap/js/sm.js",
+			"wap/js/zepto.js",
+			"wallet/balance_chose.html",
+			"wallet/bankcard_branch.html",
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"wap/css/style.css",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center_security_pay.html",
+			"wallet/bankcard_inc.html",
+			"wallet/bankcard_success.html",
+			"wap/img/app-cg.png",
+			"wap/img/app-zsyh.jpg"
+		],
+		"refer": [
+			"wallet/balance_chose.html",
+			"wallet/bankcard_branch.html",
+			"person/center_security_pay.html",
+			"wallet/bankcard_inc.html",
+			"wallet/bankcard_success.html"
+		]
+	},
+	"wallet/balance_chose.html": {
+		"resources": [
+			"wap/css/mui.indexedlist.css",
+			"wap/js/mui.indexedlist.js",
+			"wap/js/mui.min.js",
+			"wallet/bankcard_fill.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html"
+		]
+	},
+	"wallet/bankcard_branch.html": {
+		"resources": [
+			"wallet/bankcard_fill.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html"
+		]
+	},
+	"wallet/recharge.html": {
+		"resources": [
+			"index.html",
+			"wap/img/app-cn2.png",
+			"wap/img/app-cn1.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"wallet/transfer.html": {
+		"resources": [
+			"wap/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"wallet/withdrawal.html": {
+		"resources": [
+			"wap/img/app-add.png",
+			"wap/img/app-zsyh.jpg",
+			"index.html",
+			"wallet/withdrawal_explain.html"
+		],
+		"refer": [
+			"index.html",
+			"wallet/withdrawal_explain.html"
+		]
+	},
+	"wallet/withdrawal_explain.html": {
+		"resources": [
+			"wap/img/app-txsm.png",
+			"wallet/withdrawal.html"
+		],
+		"refer": [
+			"wallet/withdrawal.html"
+		]
+	},
+	"person/center_security_pay.html": {
+		"resources": [
+			"wallet/bankcard_fill.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html"
+		]
+	}
+}

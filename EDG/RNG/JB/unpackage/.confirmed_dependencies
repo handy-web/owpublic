@@ -1,0 +1,185 @@
+{
+  "join/join_us.html": {
+    "resources": [
+      "pack/css/mian.css"
+    ],
+    "refer": []
+  },
+  "join/join_apply.html": {
+    "resources": [
+      "pack/css/mian.css",
+      "pack/img/app-join-bg.png"
+    ],
+    "refer": []
+  },
+  "join/now_apply.html": {
+    "resources": [
+      "pack/img/head.jpg",
+      "pack/css/mian.css",
+      "pack/img/app-join-head.png"
+    ],
+    "refer": []
+  },
+  "join/check_apply.html": {
+    "resources": [
+      "pack/img/head.jpg",
+      "pack/css/mian.css"
+    ],
+    "refer": []
+  },
+  "user/user_center.html": {
+    "resources": [
+      "pack/img/head.jpg",
+      "pack/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+      "pack/css/mian.css",
+      "user/series_friends.html",
+      "user/inte_mall.html"
+    ],
+    "refer": [
+      "user/series_friends.html",
+      "user/inte_mall.html"
+    ]
+  },
+  "user/series_friends.html": {
+    "resources": [
+      "pack/css/mian.css",
+      "pack/img/head.jpg"
+    ],
+    "refer": []
+  },
+  "user/inte_mall.html": {
+    "resources": [
+      "pack/css/mian.css",
+      "pack/img/head.jpg",
+      "pack/img/app-inte-azy.png",
+      "pack/img/app-inte-2.png",
+      "pack/img/app-inte-1.png",
+      "user/product_details.html"
+    ],
+    "refer": [
+      "user/product_details.html"
+    ]
+  },
+  "user/product_details.html": {
+    "resources": [
+      "pack/img/app-inte-azy.png",
+      "pack/css/mian.css",
+      "pack/img/app-prod-2.png",
+      "pack/img/app-prod-1.png"
+    ],
+    "refer": []
+  },
+  "visit_jb.html": {
+    "resources": [
+      "pack/css/mian.css",
+      "pack/img/app-rt.png",
+      "pack/img/app-vi-02.gif",
+      "pack/img/app-vi-01.gif",
+      "pack/img/app-vi-03.gif",
+      "pack/css/animate.css",
+      "pack/img/app-vi-02.png",
+      "pack/img/app-vi-01.png",
+      "pack/img/app-vi-03.png"
+    ],
+    "refer": []
+  },
+  "garden_jb.html": {
+    "resources": [
+      "pack/css/mian.css",
+      "pack/img/app-g01.gif",
+      "pack/img/app-g03.gif",
+      "pack/img/app-g05.gif",
+      "pack/img/app-g04.gif",
+      "pack/img/app-g02.gif",
+      "happy_life.html",
+      "read_jb.html",
+      "luxury_world.html"
+    ],
+    "refer": [
+      "happy_life.html",
+      "read_jb.html",
+      "luxury_world.html"
+    ]
+  },
+  "happy_life.html": {
+    "resources": [
+      "pack/img/app-h03.gif",
+      "pack/img/app-h02.gif",
+      "pack/img/app-h01.gif",
+      "pack/img/app-rt.png",
+      "pack/css/mian.css"
+    ],
+    "refer": []
+  },
+  "read_jb.html": {
+    "resources": [
+      "pack/img/app-r03.gif",
+      "pack/img/app-r04.gif",
+      "pack/img/app-r02.gif",
+      "pack/img/app-rt.png",
+      "pack/img/app-r01.gif",
+      "pack/css/mian.css",
+      "pack/img/app-r03.png",
+      "pack/img/app-r04.png",
+      "pack/img/app-r01.png",
+      "pack/img/app-r02.png"
+    ],
+    "refer": []
+  },
+  "luxury_world.html": {
+    "resources": [
+      "pack/img/app-lu01.gif",
+      "pack/img/app-lu03.gif",
+      "pack/img/app-rt.png",
+      "pack/img/app-lu04.gif",
+      "pack/img/app-lu02.gif",
+      "pack/img/app-lu05.gif",
+      "pack/css/mian.css",
+      "pack/img/app-lu05.png",
+      "pack/img/app-lu02.png",
+      "pack/img/app-lu03.png",
+      "pack/img/app-lu04.png",
+      "pack/img/app-lu01.png"
+    ],
+    "refer": []
+  },
+  "index.html": {
+    "resources": [
+      "pack/img/app-index.gif",
+      "pack/css/mian.css",
+      "pack/img/app-index.png",
+      "pack/img/app-but.png",
+      "pack/img/app-z01.png",
+      "pack/img/app-z03.png",
+      "pack/img/app-z02.png"
+    ],
+    "refer": []
+  },
+  "profile_jb.html": {
+    "resources": [
+      "pack/img/app-jbgj.png",
+      "pack/css/mian.css"
+    ],
+    "refer": []
+  },
+  "working/working_method.html": {
+    "resources": [
+      "pack/img/app-wkr.png",
+      "pack/img/app-wk02.gif",
+      "pack/img/app-001.png",
+      "pack/js/jquery.jscroll.min.js",
+      "pack/js/TweenMax.min.js",
+      "pack/img/app-wk03.png",
+      "pack/img/app-wr.png",
+      "pack/js/common.js",
+      "pack/img/app-w04.jpg",
+      "pack/img/app-w01.png",
+      "pack/js/common_home.js",
+      "pack/http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js",
+      "pack/css/work.css",
+      "pack/js/touchwipe.js",
+      "pack/css/mian.css"
+    ],
+    "refer": []
+  }
+}

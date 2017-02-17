@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" id="favicon" href="http://oflpt1i9i.bkt.clouddn.com/logo.png" type="image/x-icon">
+		<title>jQuery-日历</title>
+		<link rel="stylesheet" href="http://oflrtybki.bkt.clouddn.com/dateFormat.css">
+		<script src='http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js'></script>
+	</head>
+	<body style="background: #fff;">
+		<style>
+			.box-h2{text-align: center;font-size: 18px;margin-top: 20px;font-family: "microsoft yahei"}
+			.box-in{margin: 50px 0;text-align: center;}
+			.box-in input{width: 258.5px;padding: 8px 10px;border: 1px solid #ccc;font-family: 'microsoft yahei';display: inline-block;margin: 0 10px;}
+		</style>
+		<h2 class="box-h2">日期插件-只能用一次</h2>
+		<div class="box-in">
+			<input type="text" name="" id="datepicker1" readonly value="" placeholder="点击选择" />			
+			<input type="text" name="" id="datepicker2" readonly value="" placeholder="点击选择" />			
+		</div>
+		
+		
+		<script src='http://oflrtybki.bkt.clouddn.com/dateFormat.js'></script>
+		</div>
+		<script>  
+			$(function() {
+				$("#datepicker1,#datepicker2").datepicker({
+					dateFormat: "yy-mm-dd"		
+				});		
+			});
+		</script>
+	</body>
+</html>

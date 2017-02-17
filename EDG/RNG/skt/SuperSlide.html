@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" id="favicon" href="http://oflpt1i9i.bkt.clouddn.com/logo.png" type="image/x-icon">
+		<title>轮播图</title>
+		<script type="text/javascript" src="http://oflpt1i9i.bkt.clouddn.com/jquery-1.10.1.min.js"></script>
+	</head>
+	<body>
+		<style>		
+		*{margin: 0;padding: 0;}
+		ul,ol{list-style: none}
+		.slider{position:relative;text-align:center; margin:0 auto;z-index:1;}
+		.slider .bd,.slider .bd li,.slider .bd img{width:100%;vertical-align: middle;font-size: 0;border: 0;}/*请给每个幻灯片套个div并设置id，通过id重置这个地方的宽度，达到自定义效果*/
+		.slider .bd{z-index:2;overflow:hidden;font-size: 0;}
+		.slider .bd li{float:left;width: 100%;overflow:hidden; background-position:center; background-repeat:no-repeat}
+		.slider .bd li a{ display:block; width: 100%; height: 100%}
+		.slider .bd li img{display:block}
+		.slider .hd{ position: absolute; z-index: 3; left: 0; right: 0; bottom:20px; padding: 0 10px; text-align: center}
+		/*圆点*/
+		
+		.dots li{border-radius: 6px;width: 4px;height: 4px; position: relative;margin: 0 13px; background: #fff;display: inline-block;cursor: pointer;}
+		.dots li i{width: 14px;height: 14px;border-radius: 14px;border: transparent 2px solid;position: absolute;top: -7px;left: -7px;display: inline-block;transition: all ease-out .3s;}
+		.dots li i:hover{border: 2px solid #fff;}
+		.dots li i.active{border: 2px solid #fff;}
+		
+		  
+		  /*数字*/
+		  .numbox li{width:20px; height:20px; line-height:20px; font-size:13px;font-family:Arial;font-weight:bold; text-indent:inherit;}
+		  .numbox li.active{color:#fff}
+		  /*长方条*/
+		  .rectangle li{width:40px; height:10px;font-size:0px;
+		  #slider-3{width: 100%;overflow: hidden}/*这个是demo页面定义尺寸的样式，请根据自己幻灯片的尺寸重新定义。切莫生搬硬套。*/
+		</style>
+		<div id="slider-3">
+			<div class="slider">
+				<div class="bd">
+					<ul>
+						<li>
+							<a><img src="http://oflpt1i9i.bkt.clouddn.com/banner-1.jpeg"></a>
+						</li>
+						<li>
+							<a><img src="http://oflpt1i9i.bkt.clouddn.com/banner-1.jpeg"></a>
+						</li>
+						<li>
+							<a><img src="http://oflpt1i9i.bkt.clouddn.com/banner-1.jpeg"></a>
+						</li>
+						<li>
+							<a><img src="http://oflpt1i9i.bkt.clouddn.com/banner-1.jpeg"></a>
+						</li>
+					</ul>
+				</div>
+				<ol class="hd cl dots">
+					<li><i class="active"></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+				</ol>
+			</div>
+		</div>
+
+		<script>
+			$(function(){
+				jQuery("#slider-3 .slider").slide({mainCell:".bd ul",titCell:".dots li i",trigger:"click",effect:"leftLoop",autoPlay:true,delayTime:500,interTime:3000,pnLoop:false,titOnClassName:"active"});
+			});
+		</script>
+	</body>
+	<script type="text/javascript" src="http://oflrtybki.bkt.clouddn.com/SuperSlide.js"></script>
+
+</html>
